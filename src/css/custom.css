@@ -1,0 +1,44 @@
+html {
+  font-size: 100%; }
+
+.logo_img {
+  max-width: 100%;
+  height: auto; }
+
+div > ul > li > a {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  text-align: center; }
+
+div > ul > li.active a {
+  color: #0062cc !important; }
+
+div > ul > li > a:hover {
+  color: #0062cc !important;
+  transition: 200ms ease-in-out; }
+
+img {
+  height: 60vh; }
+
+.animateBar {
+  transition: 750ms  ease-in-out;
+  background-color: white !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+@media (max-width: 992px) {
+  nav > div > ul > li {
+    background-color: #fff;
+    color: #0062cc !important;
+    outline: 2px solid #fff !important;
+    transition: 500ms ease-in-out; }
+
+  nav > div > ul > li > a {
+    color: #0062cc !important; }
+
+  nav div > ul > li.active a, nav div > ul > li > a:hover {
+    transition: 500ms ease-in-out;
+    outline: 1px solid #0062cc !important;
+    color: #fff !important;
+    background-color: #0062cc; } }
+
+/*# sourceMappingURL=custom.css.map */
