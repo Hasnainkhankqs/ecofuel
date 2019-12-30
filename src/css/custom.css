@@ -17,7 +17,7 @@ div > ul > li > a:hover {
   color: #0062cc !important;
   transition: 200ms ease-in-out; }
 
-img {
+.carousel-item img {
   height: 60vh; }
 
 .animateBar {
@@ -40,5 +40,19 @@ img {
     outline: 1px solid #0062cc !important;
     color: #fff !important;
     background-color: #0062cc; } }
+#backtotop {
+  position: fixed;
+  bottom: -5.2rem;
+  right: 1.2rem;
+  z-index: 22;
+  font-size: 12px;
+  background-color: #0062cc;
+  transition: 200ms ease-in-out; }
+  #backtotop img {
+    width: 100%; }
+  #backtotop:hover {
+    transition: 200ms ease-in-out;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer; }
 
 /*# sourceMappingURL=custom.css.map */

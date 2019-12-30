@@ -26,7 +26,7 @@ div>ul>li>a:hover{
 }
 
     // slider height can be increased by resizing image heigth
- img {
+.carousel-item img {
     height: 60vh;
   }
 
@@ -73,3 +73,26 @@ div>ul>li>a:hover{
      }
 
  }
+
+
+ //designing backtotop icon
+ #backtotop { 
+    // opacity: 0;
+    position: fixed; 
+    bottom: -5.2rem;
+    right: 1.2rem;
+    z-index: 22;
+    font-size:12px;
+    background-color: #0062cc;
+    transition: 200ms ease-in-out;
+
+    img{
+        width: 100%;
+    }
+     &:hover{
+        transition: 200ms ease-in-out;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        cursor: pointer;
+     }
+  
+}

@@ -5,13 +5,18 @@ new WOW().init();
 
 
 $(function(){
+  var sstop = $("#footer").offset().top;
+  console.log(sstop);
   var scrollLink = $(".nav-link");
   scrollLink.click(function(e) {
   e.preventDefault();
+    // console.log(scrollLink.offset().top);
 
-  $('body,html').animate({
+  $("body,html").animate({
     scrollTop: $(this.hash).offset().top
-  }, 1000 );
+
+
+  }, 1000 );//for soomth link location
 
 
   });
@@ -40,10 +45,14 @@ $(function(){
      if(winheight >= totalgalheight ){
       $("nav").addClass("animateBar");
       $("nav").removeClass("bg-white");
+      // back to top
+      $("#backtotop").css("bottom","1.2rem")
     }
     else{
       $("nav").addClass("bg-white");
       $("nav").removeClass("animateBar");
+      // back to top
+      $("#backtotop").css("bottom","-5.2rem")
     }
 
     // animation navigation bar ended
@@ -57,15 +66,22 @@ $(function(){
         $(this).parent().addClass('active');
         $(this).parent().siblings().removeClass('active');
       }
-    });
+    });//ending of this scrolllink function
 
+
+
+  
+      // scroll to top
+    $("#backtotop").click(function(){
+        var sstop = $("#footer").offset().top;
+  console.log(sstop);
+      $('body,html').animate({
+        scrollTop: 0
+      }, 1000 );
+    });//end of back to top
+
+   });//ending of window.scroll event
 
 
     
-
-   });
-
-
-
-    
-  });
+  });//ending of jquery ready function
