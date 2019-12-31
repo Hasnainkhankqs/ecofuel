@@ -3,6 +3,11 @@ html{
     font-size: 100%;
 
 }
+// enable this to get full width website
+// .container-fluid{
+//     padding: 0px;
+//     margin: 0px;
+// }
 // logo can be resize by this or by the size provided in image tag
 .logo_img{
     max-width: 100%;
@@ -31,11 +36,7 @@ div>ul>li>a:hover{
   }
 
 
-// enable this to get full width website
-// .container-fluid{
-//     padding: 0px;
-//     margin: 0px;
-// }
+
 
 .animateBar{
     transition: 750ms  ease-in-out;
