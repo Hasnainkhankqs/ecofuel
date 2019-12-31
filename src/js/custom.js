@@ -5,20 +5,17 @@ new WOW().init();
 
 
 $(function(){
+
+
   var sstop = $("#footer").offset().top;
   console.log(sstop);
   var scrollLink = $(".nav-link");
   scrollLink.click(function(e) {
   e.preventDefault();
     // console.log(scrollLink.offset().top);
-
   $("body,html").animate({
     scrollTop: $(this.hash).offset().top
-
-
   }, 1000 );//for soomth link location
-
-
   });
 
 
@@ -28,6 +25,14 @@ $(function(){
   var top_margin = $("#navbar").outerHeight();
   $("#carouselExampleCaptions").css("margin-top",top_margin+"px");
 
+
+
+  // scroll to top
+  $("#backtotop").click(function(){
+    $('body,html').animate({
+      scrollTop: 0
+    }, 1000 );
+  });//end of back to top
 
 
 
@@ -46,13 +51,15 @@ $(function(){
       $("nav").addClass("animateBar");
       $("nav").removeClass("bg-white");
       // back to top
-      $("#backtotop").css("bottom","1.2rem")
+      $("#backtotop").css("bottom","1.2rem");
+      $("#emailus").css("bottom","4.6rem");
     }
     else{
       $("nav").addClass("bg-white");
       $("nav").removeClass("animateBar");
       // back to top
-      $("#backtotop").css("bottom","-5.2rem")
+      $("#backtotop").css("bottom","-5.2rem");
+      $("#emailus").css("bottom","1rem");
     }
 
     // animation navigation bar ended
@@ -71,17 +78,10 @@ $(function(){
 
 
   
-      // scroll to top
- 
-   });//ending of window.scroll event
+    
+  });//ending of window.scroll event
+  
 
-   $("#backtotop").click(function(){
-    var sstop = $("#footer").offset().top;
-console.log(sstop);
-  $('body,html').animate({
-    scrollTop: 0
-  }, 1000 );
-});//end of back to top
 
     
   });//ending of jquery ready function

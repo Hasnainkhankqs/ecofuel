@@ -75,24 +75,36 @@ div>ul>li>a:hover{
  }
 
 
- //designing backtotop icon
- #backtotop { 
-    // opacity: 0;
+ //designing backtotop icon and emailus icon
+ #backtotop , #emailus{
     position: fixed; 
-    bottom: -5.2rem;
-    right: 1.2rem;
+    right: 1rem;
     z-index: 22;
-    font-size:12px;
-    background-color: #0062cc;
     transition: 200ms ease-in-out;
+ 
+    .backtotopsvg,.emailussvg{
 
-    img{
-        width: 100%;
-    }
-     &:hover{
+        fill:none;
+        stroke-width:1;
+        stroke:#0062cc;
         transition: 200ms ease-in-out;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        cursor: pointer;
-     }
-  
+
+        &:hover{
+            transition: 200ms ease-in-out;
+            stroke:#000;
+            cursor: pointer;
+        }
+
+    }
+
+ }
+
+ #backtotop { 
+    bottom: -5.2rem;
 }
+
+#emailus{
+    bottom: 1rem; 
+
+}
+ //designing backtotop icon and emailus icon ended
