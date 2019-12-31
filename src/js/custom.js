@@ -72,16 +72,16 @@ $(function(){
 
   
       // scroll to top
-    $("#backtotop").click(function(){
-        var sstop = $("#footer").offset().top;
-  console.log(sstop);
-      $('body,html').animate({
-        scrollTop: 0
-      }, 1000 );
-    });//end of back to top
-
+ 
    });//ending of window.scroll event
 
+   $("#backtotop").click(function(){
+    var sstop = $("#footer").offset().top;
+console.log(sstop);
+  $('body,html').animate({
+    scrollTop: 0
+  }, 1000 );
+});//end of back to top
 
     
   });//ending of jquery ready function
