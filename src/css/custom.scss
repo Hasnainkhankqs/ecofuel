@@ -109,3 +109,55 @@ div>ul>li>a:hover{
 
 }
  //designing backtotop icon and emailus icon ended
+
+
+
+//  galary started
+
+.gallery-title
+{
+    font-size: 2.3rem;
+    color: #0062cc;
+    text-align: center;
+    
+}
+
+.filter-button
+{
+    font-size: 1.2rem;
+    border: 1px solid #0062cc;
+    border-radius: 5px;
+    text-align: center;
+    color: #0062cc;
+
+}
+.filter-button:hover
+{
+    
+    border: 1px solid #0062cc;
+    color: #ffffff;
+    background-color: #0062cc;
+
+}
+
+// .port-image
+// {
+//     width: 50%;
+    
+// }
+
+.gallery_product img
+{
+    box-shadow: 35px 31px 68px -5px rgba(0,0,0,0.27);
+    transition: 0.5s;
+
+    margin-bottom: 2.8rem;
+    &:hover{
+        box-shadow: 8px 8px 30px rgba(0, 0, 0, 0.4);
+        cursor: pointer;
+
+    }
+}
+
+
+//  galary ended
