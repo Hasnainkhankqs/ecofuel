@@ -74,6 +74,12 @@ div>ul>li>a:hover{
      }
 
  }
+ @media(max-width : 575px){
+    .filter-btn button{
+        margin: 0.5rem ;
+        
+    }
+ }
 
 
  //designing backtotop icon and emailus icon
@@ -146,12 +152,13 @@ div>ul>li>a:hover{
     
 // }
 
-.gallery_product img
-{
-    box-shadow: 35px 31px 68px -5px rgba(0,0,0,0.27);
-    transition: 0.5s;
-
-    margin-bottom: 2.8rem;
+    .gallery_product img
+    {
+        box-shadow: 35px 31px 68px -5px rgba(0,0,0,0.27);
+        transition: 0.5s;
+        margin-bottom: 2.8rem;
+     
+    
     &:hover{
         box-shadow: 8px 8px 30px rgba(0, 0, 0, 0.4);
         cursor: pointer;

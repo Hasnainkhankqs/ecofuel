@@ -40,6 +40,9 @@ div > ul > li > a:hover {
     outline: 1px solid #0062cc !important;
     color: #fff !important;
     background-color: #0062cc; } }
+@media (max-width: 575px) {
+  .filter-btn button {
+    margin: 0.5rem; } }
 #backtotop, #emailus {
   position: fixed;
   right: 1rem;
