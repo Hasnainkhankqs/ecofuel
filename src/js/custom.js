@@ -3,12 +3,12 @@ new WOW().init();
 
 // This is to prevent any jQuery code from running before the document is finished loading (is ready).
 
+document.cookie = 'same-site-cookie=foo; SameSite=Lax';
+// document.cookie = 'cross-site-cookie=bar; SameSite=None; Secure';
 
 $(function(){
 
 
-  var sstop = $("#footer").offset().top;
-  console.log(sstop);
   var scrollLink = $(".nav-link");
   scrollLink.click(function(e) {
   e.preventDefault();
