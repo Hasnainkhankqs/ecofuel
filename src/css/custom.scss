@@ -79,6 +79,7 @@ div>ul>li>a:hover{
         margin: 0.5rem ;
         
     }
+
  }
 
 
@@ -171,5 +172,17 @@ div>ul>li>a:hover{
 
 
 // footer started
-
+#footer{
+    background-image: linear-gradient(to top, #121212 0%, #323232 100%);
+    a{
+        display: block;
+        color:#fff;
+    }
+    h3{
+        color:#fff;
+    }
+    ul{
+        padding: 0px;
+    }
+}
 // footer ended
