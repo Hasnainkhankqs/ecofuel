@@ -55,7 +55,7 @@ div > ul > li > a:hover {
     transition: 200ms ease-in-out; }
     #backtotop .backtotopsvg:hover, #backtotop .emailussvg:hover, #emailus .backtotopsvg:hover, #emailus .emailussvg:hover {
       transition: 200ms ease-in-out;
-      stroke: #000;
+      stroke: #7dcc18;
       cursor: pointer; }
 
 #backtotop {
@@ -92,11 +92,13 @@ div > ul > li > a:hover {
 #footer {
   background-image: linear-gradient(to top, #121212 0%, #323232 100%); }
   #footer a {
-    display: block;
-    color: #fff; }
+    color: #fff;
+    text-decoration: none; }
   #footer h3 {
     color: #fff; }
   #footer ul {
     padding: 0px; }
+  #footer strong {
+    color: #7dcc18 !important; }
 
 /*# sourceMappingURL=custom.css.map */

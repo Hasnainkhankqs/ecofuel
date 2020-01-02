@@ -99,7 +99,7 @@ div>ul>li>a:hover{
 
         &:hover{
             transition: 200ms ease-in-out;
-            stroke:#000;
+            stroke:#7dcc18;
             cursor: pointer;
         }
 
@@ -175,14 +175,17 @@ div>ul>li>a:hover{
 #footer{
     background-image: linear-gradient(to top, #121212 0%, #323232 100%);
     a{
-        display: block;
         color:#fff;
+        text-decoration: none;
     }
     h3{
         color:#fff;
     }
     ul{
         padding: 0px;
+    }
+    strong{
+        color:#7dcc18 !important;
     }
 }
 // footer ended
