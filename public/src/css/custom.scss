@@ -31,8 +31,12 @@ div>ul>li>a:hover{
 }
 
     // slider height can be increased by resizing image heigth
-.carousel-item img {
-    height: 60vh;
+
+.carousel-item  {
+    height: 79vh;
+    img{
+    height: auto;
+    }
   }
 
 

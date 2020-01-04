@@ -17,8 +17,10 @@ div > ul > li > a:hover {
   color: #0062cc !important;
   transition: 200ms ease-in-out; }
 
-.carousel-item img {
-  height: 60vh; }
+.carousel-item {
+  height: 79vh; }
+  .carousel-item img {
+    height: auto; }
 
 .animateBar {
   transition: 750ms  ease-in-out;
