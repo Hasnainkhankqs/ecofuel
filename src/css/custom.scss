@@ -33,7 +33,7 @@ div>ul>li>a:hover{
     // slider height can be increased by resizing image heigth
 
 .carousel-item  {
-    height: 79vh;
+
     img{
     height: auto;
     }
@@ -193,3 +193,23 @@ div>ul>li>a:hover{
     }
 }
 // footer ended
+
+
+// contact info 
+@media(max-width: 547px){
+    
+    #navbar{
+        display: block;
+        text-align: center;
+        
+        #contact_info{
+            display: block;
+            
+        }
+        button{
+         margin-top: 1rem;   
+         margin-bottom: 1rem;   
+        }
+
+    }
+}

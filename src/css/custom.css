@@ -17,10 +17,8 @@ div > ul > li > a:hover {
   color: #0062cc !important;
   transition: 200ms ease-in-out; }
 
-.carousel-item {
-  height: 79vh; }
-  .carousel-item img {
-    height: auto; }
+.carousel-item img {
+  height: auto; }
 
 .animateBar {
   transition: 750ms  ease-in-out;
@@ -102,5 +100,15 @@ div > ul > li > a:hover {
     padding: 0px; }
   #footer strong {
     color: #7dcc18 !important; }
+
+@media (max-width: 547px) {
+  #navbar {
+    display: block;
+    text-align: center; }
+    #navbar #contact_info {
+      display: block; }
+    #navbar button {
+      margin-top: 1rem;
+      margin-bottom: 1rem; } }
 
 /*# sourceMappingURL=custom.css.map */

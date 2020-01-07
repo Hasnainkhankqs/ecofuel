@@ -24,7 +24,10 @@ $(function(){
   // taking navbar height so that slider or carousel will start after its height
   var top_margin = $("#navbar").outerHeight();
   $("#carouselExampleCaptions").css("margin-top",top_margin+"px");
-
+  $(window).resize(function(){
+    var top_margin = $("#navbar").outerHeight();
+    $("#carouselExampleCaptions").css("margin-top",top_margin+"px");
+  })
 
 
   // scroll to top
@@ -39,7 +42,8 @@ $(function(){
 
   // animate navbar when the galary offset
   $(window).scroll(function(){
-    
+
+
       $("nav").css("transition","500ms ease-in-out");
       //getting the offset height of galary from top
        var galheight = $("#galary").offset().top;
