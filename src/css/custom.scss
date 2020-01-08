@@ -151,11 +151,7 @@ div>ul>li>a:hover{
 
 }
 
-// .port-image
-// {
-//     width: 50%;
-    
-// }
+
 
     .gallery_product img
     {
@@ -171,7 +167,15 @@ div>ul>li>a:hover{
     }
 }
 
-
+#galary {
+    .container-fluid{
+        padding:0px !important;
+        .row{
+            width: 100%;
+        }
+        
+    }
+}
 //  galary ended
 
 
