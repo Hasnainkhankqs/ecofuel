@@ -3,18 +3,25 @@ html{
     font-size: 100%;
 
 }
+// .container-fluid{
+//     padding: 0px;
+//     margin: 0px;
+// }
 // enable this to get full width website
 // .container-fluid{
 //     padding: 0px;
 //     margin: 0px;
 // }
 // logo can be resize by this or by the size provided in image tag
+.navbar{
+    padding: 0px;
+}
 .logo_img{
     max-width: 100%;
     height: auto;
 }
 
-div>ul>li>a {
+nav div>ul>li>a {
     
     font-size: 1.1rem;
     text-transform: uppercase;
@@ -211,9 +218,25 @@ div>ul>li>a:hover{
             
         }
         button{
-         margin-top: 1rem;   
-         margin-bottom: 1rem;   
+         margin-top: 0rem;   
+         margin-bottom: 0rem;   
         }
 
     }
+    .gallery_product img{
+        width:80%;
+    }
+    nav div>ul>li>a {
+    
+        font-size: 1rem;
+    
+    }
+    .logo_img{
+        max-width: 70%;
+        
+    }
+    
+}
+body{
+    overflow-x: hidden;
 }

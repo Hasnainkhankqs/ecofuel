@@ -1,11 +1,14 @@
 html {
   font-size: 100%; }
 
+.navbar {
+  padding: 0px; }
+
 .logo_img {
   max-width: 100%;
   height: auto; }
 
-div > ul > li > a {
+nav div > ul > li > a {
   font-size: 1.1rem;
   text-transform: uppercase;
   text-align: center; }
@@ -113,7 +116,18 @@ div > ul > li > a:hover {
     #navbar #contact_info {
       display: block; }
     #navbar button {
-      margin-top: 1rem;
-      margin-bottom: 1rem; } }
+      margin-top: 0rem;
+      margin-bottom: 0rem; }
+
+  .gallery_product img {
+    width: 80%; }
+
+  nav div > ul > li > a {
+    font-size: 1rem; }
+
+  .logo_img {
+    max-width: 70%; } }
+body {
+  overflow-x: hidden; }
 
 /*# sourceMappingURL=custom.css.map */

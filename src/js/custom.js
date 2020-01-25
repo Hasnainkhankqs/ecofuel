@@ -8,7 +8,11 @@ new WOW().init();
 
 $(function(){
 
-
+// close navigation bar when clicked outside of the area
+    $(document).click(function (event) {
+      $('.navbar-collapse').collapse('hide');
+    });
+  // close navigation bar when clicked outside of the area ended
   var scrollLink = $(".nav-link");
   scrollLink.click(function(e) {
   e.preventDefault();
