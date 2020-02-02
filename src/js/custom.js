@@ -7,7 +7,7 @@ new WOW().init();
 // document.cookie = 'cross-site-cookie=bar; SameSite=None; Secure';
 
 $(function(){
-
+  
 // close navigation bar when clicked outside of the area
     $(document).click(function (event) {
       $('.navbar-collapse').collapse('hide');
@@ -25,12 +25,13 @@ $(function(){
 
 
 
-  // taking navbar height so that slider or carousel will start after its height
-  var top_margin = $("#navbar").outerHeight();
-  $("#carouselExampleCaptions").css("margin-top",top_margin+"px");
+  // taking navbar height so that slider or carousel or hero section will start after its height
+  var top_margin = $("#top_contact").outerHeight();
+  $("#navbar").css("margin-top",top_margin+"px");
+
   $(window).resize(function(){
-    var top_margin = $("#navbar").outerHeight();
-    $("#carouselExampleCaptions").css("margin-top",top_margin+"px");
+    top_margin = $("#top_contact").outerHeight();
+    $("#navbar").css("margin-top",top_margin+"px");
   })
 
 
@@ -47,24 +48,26 @@ $(function(){
   // animate navbar when the galary offset
   $(window).scroll(function(){
 
-
-      $("nav").css("transition","500ms ease-in-out");
+     top_margin = $("#top_contact").outerHeight();
+      $("nav").css("transition","200ms ease-in-out");
       //getting the offset height of galary from top
-       var galheight = $("#galary").offset().top;
+      //  var galheight = $("#galary").offset().top;
        //add navigation height for better display
-       var totalgalheight = galheight - $("#navbar").outerHeight()
+      //  var totalgalheight = galheight - $("#navbar").outerHeight()
       //  getting the offset height of window
        var winheight = $(window).scrollTop();
-     if(winheight >= totalgalheight ){
+     if(winheight >= (top_margin)/2 ){
       $("nav").addClass("animateBar");
-      $("nav").removeClass("bg-white");
+      $("nav").removeClass("bg-transperant");
+      $("#navbar").css("margin-top",0+"px");
       // back to top
       $("#backtotop").css("bottom","1.2rem");
       $("#emailus").css("bottom","4.6rem");
     }
     else{
-      $("nav").addClass("bg-white");
+      $("nav").addClass("bg-transperant");
       $("nav").removeClass("animateBar");
+      $("#navbar").css("margin-top",top_margin+"px");
       // back to top
       $("#backtotop").css("bottom","-5.2rem");
       $("#emailus").css("bottom","1rem");
